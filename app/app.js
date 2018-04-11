@@ -1,24 +1,36 @@
 var myapp = angular.module('myapp',['ngRoute']);
 
-myapp.config(['$routeProvider',function($routeProvider){
 
-  $routeProvider.when('/!',{
-      templateurl:'views/home.html',
-      controller:'myappController'
-    }).when('#!page1',{
-      templateurl:'views/page1.html'
-    }).when('#!page2',{
-      templateurl:'views/page2.html'
-    }).when('#!page3',{
-      templateurl:'views/page3.html'
-    }).when('#!page4',{
-      templateurl:'views/page4.html'
-    }).otherwise({
-      redirectTo:'/home'
+myapp.config(function($routeProvider) {
+    $routeProvider
+    .when("/", {
+        templateUrl : "views/page1.html"
+    })
+    .when("/page1", {
+        templateUrl : "views/page2.html"
+    })
+    .when("/page2", {
+        templateUrl : "views/page3.html"
+    })
+    .when("/page3", {
+        templateUrl : "views/page4.html"
     });
+});
 
-}]);
 
 myapp.controller('myappController',['$scope',function($scope){
+  $scope.data = {
+    {
+      project: "ping-pong",
+      url:'ksowkpos'
+    },
+    {
+      project: "ping-pong",
+      url:'ksowkpos'
+    }
+  }
 
+  $scope.animateBlocks= function(){
+    console.log('animation will start');
+  }
 }])
