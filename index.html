@@ -2,13 +2,22 @@
 <html lang="en">
   <head>
     <title>The angular app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
     <link href="content/css/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="app/lib/bootstrap.min.css"/>
     <script src="app/lib/angular.min.js"></script>
     <script src="app/lib/angular-route.min.js"></script>
+    <script src="app/lib/angular-animate.min.js"></script>
     <script src="app/app.js"></script>
+    <script src="app/lib/ui-bootstrap-tpls-2.5.0.min.js"></script>
   </head>
   <body  ng-app="myapp">
-    <header ng-include="'header.html'"></header>
-    <main ng-view></main>
+    <div class="container-fluid">
+      <div  class="row two-rows" >
+        <main-manu data="data"></main-manu >
+      </div>
+        <main ng-view></main>
+    </div>
   </body>
 </html>

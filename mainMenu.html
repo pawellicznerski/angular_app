@@ -1,0 +1,37 @@
+  <div ng-controller="CollapseDemoCtrl">
+  	<nav class="navbar navbar-default navbar-fixed-top"  role="navigation">
+  		<div class="navbar-header ">
+  			<button type="button" class="navbar-toggle btn navbar-btn" ng-click="isNavCollapsed = !isNavCollapsed">
+  				<span class="sr-only">Toggle navigation</span>
+  				<span class="icon-bar"></span>
+  				<span class="icon-bar"></span>
+  				<span class="icon-bar"></span>
+  			</button>
+  			<a class="navbar-brand" href="#">A menu</a>
+  		</div>
+  		<div class="collapse navbar-collapse" uib-collapse="isNavCollapsed">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#!page1">Link 1</a>
+          </li>
+          <li>
+            <a href="#!page2">Link 2{{data}}</a>
+          </li>
+          <li>
+            <a href="#!page3">Link 3</a>
+          </li>
+          <li>
+            <a href="#!nav">Disabled</a>
+          </li>
+        </ul>
+  		</div>
+  	</nav>
+
+  </div>
+<!--
+  <div class="col-md-12">
+    <span>
+      This site uses cookies so that my service can work better
+    </span>
+    <button class="btn btn-light">Accept</button>
+  </div> -->
