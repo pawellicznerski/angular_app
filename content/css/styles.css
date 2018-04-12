@@ -1,13 +1,4 @@
-.horizontal-collapse {
-  height: 70px;
-  /*background-color: green;*/
 
-}
-.navbar-collapse.in {
-  overflow-y: hidden;
-  background: linear-gradient(45deg, rgba(15,131,255,0.95) 15%,rgba(15,131,255,0.85) 15%,rgba(15,131,255,0.85) 35%,rgba(15,131,255,0.8) 35%,rgba(15,131,255,0.95) 65%,rgba(15,131,255,1) 65%)
-
-}
 
 	/*Main styles--------------------------------------*/
 
@@ -29,12 +20,27 @@
 
  /*styles for navbar -------------------------------*/
 
+ .horizontal-collapse {
+   height: 70px;
+
+ }
+ .navbar-collapse.in {
+   overflow-y: hidden;
+   background-color: rgba(15,131,255,0.3);
+ }
+
+  nav.navbar{
+    margin:0;
+    border: 0;
+  }
+
 	nav > .navbar-header {
-		background-color: rgb(37, 72, 142) ;
+		background-color: rgba(37, 72, 142,1);
+
 	}
 
 	nav > .navbar-header > .navbar-brand {
-    color:  rgb(255, 255, 255) ;
+    color:  rgb(255, 255, 255) !important;
 	}
 
 	nav > .navbar-header > .navbar-brand:hover{
@@ -55,11 +61,20 @@
   }
 
   nav > .navbar-header > .navbar-toggle.navbar-btn{
-    /*background-color: red;*/
     border: none;
   }
 
-	section.cookie-info > .col-md-12 {
+  nav.navbar > .navbar-collapse > .nav.navbar-nav >li > a{
+    color:  rgb(255, 255, 255) ;
+    text-transform: uppercase;
+  }
+
+  nav.navbar > .navbar-collapse > .nav.navbar-nav >li > a:hover{
+    color:  rgb(255, 255, 255) ;
+    background-color: rgba(15,131,255,0.3);
+  }
+
+	/*section.cookie-info > .col-md-12 {
 		margin:auto;
 		padding: 8px 0;
 		display: flex;
@@ -77,7 +92,7 @@
 		width: 110px;
 		color: rgb(15,131,255);
 
-	}
+	}*/
 
 	/* styles for section.header------------------------------------*/
 

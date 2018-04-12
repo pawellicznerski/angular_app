@@ -21,11 +21,13 @@ myapp.config(function($routeProvider) {
 });
 
 angular.module('myModule', ['ui.bootstrap']);
+
 myapp.controller('CollapseDemoCtrl', function ($scope) {
   $scope.isNavCollapsed = true;
   $scope.isCollapsed = false;
   $scope.isCollapsedHorizontal = false;
 });
+
 myapp.directive('mainManu',function(){
   return {
     restrict:'E',
