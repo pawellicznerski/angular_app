@@ -47,8 +47,10 @@ myapp.directive('projectBlock',function(){
       data:'=',
       title:'='
     },
-    templateUrl:"projectBlock.html"
-    // controller: function($scope){}
+    templateUrl:"projectBlock.html",
+    controller: function($scope){
+      console.log($scope.title);
+    }
   }
 })
 

@@ -180,6 +180,8 @@
 		position: relative;
 }
 
+
+
 	.col-md-4 > .card >.card-block {
 		/*border: 1px solid blue !important;*/
 		height: 100%;
@@ -200,13 +202,24 @@
 		font-weight: bold;
 }
 	.col-md-4 > .card >.card-footer {
-		height: 60px;
+		bottom:0;
+		background-color: rgb(15,131,255);
+		height: 0;
 		width: 100%;
 		position: absolute;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		opacity: 0;
+		transition: 0.2s linear all;
+
 }
+.col-md-4 > .card:hover >.card-footer {
+	height: 50%;
+	transition: 0.5s linear all;
+	opacity:1;
+}
+
 	.col-md-4 > .card >.card-footer>small {
 		margin-right: 10px;
 }
