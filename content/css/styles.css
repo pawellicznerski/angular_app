@@ -220,7 +220,7 @@
 	opacity:1;
 }
 
-	.col-md-4 > .card >.card-footer>small {
+	.col-md-4 > .card >.card-footer>kbd {
 		margin-right: 10px;
 }
 
