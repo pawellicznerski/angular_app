@@ -40,6 +40,18 @@ myapp.directive('mainManu',function(){
   }
 })
 
+myapp.directive('projectBlock',function(){
+  return {
+    restrict:'E',
+    scope:{
+      data:'=',
+      title:'='
+    },
+    templateUrl:"projectBlock.html"
+    // controller: function($scope){}
+  }
+})
+
 myapp.controller('myappController',['$scope',function($scope){
   $scope.data = [
     {

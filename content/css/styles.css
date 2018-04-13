@@ -74,26 +74,6 @@
     background-color: rgba(15,131,255,0.3);
   }
 
-	/*section.cookie-info > .col-md-12 {
-		margin:auto;
-		padding: 8px 0;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	section.cookie-info > .col-md-12 > span {
-		color: #fff;
-	}
-
-	section.cookie-info > .col-md-12 > button {
-		border-radius: 30px;
-		margin-left: 2rem;
-		width: 110px;
-		color: rgb(15,131,255);
-
-	}*/
-
 	/* styles for section.header------------------------------------*/
 
 	section.header {
@@ -189,16 +169,72 @@
 		background-color: #fff;
 	}
 
-	section.latest-works > .container > .row > .col-md-4 >div{
+	/*section.latest-works > .container > .row > .col-md-4 >div{
+	}*/
+
+	.col-md-4 > .card {
 		margin: 25px;
-		height: 285px;
+		height: 345px;
 		width: 85%;
-		background-color: blue;
-	}
+		background-color: rgb(230,230,230);
+		position: relative;
+}
+
+	.col-md-4 > .card >.card-block {
+		/*border: 1px solid blue !important;*/
+		height: 100%;
+}
+	.col-md-4 > .card > .card-block > .thumbnail {
+		width:100%;
+		height: 100%;
+}
+	.col-md-4 > .card > .card-block > .thumbnail >  img{
+		width:100%;
+		height: auto;
+}
+	.col-md-4 > .card > .card-block > .thumbnail > .caption{
+		margin-top: 10px;
+		text-align: center;
+		color: rgb(15,131,255);
+		font-size: 18px;
+		font-weight: bold;
+}
+	.col-md-4 > .card >.card-footer {
+		height: 60px;
+		width: 100%;
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+}
+	.col-md-4 > .card >.card-footer>small {
+		margin-right: 10px;
+}
 
 	section.latest-works > .container > .row:last-child{
 		padding-bottom: 40px;
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	 /*styles for section.clients ----------------------------------*/
 
