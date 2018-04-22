@@ -53,20 +53,3 @@ myapp.directive('projectBlock',function(){
     }
   }
 })
-
-myapp.controller('myappController',['$scope',function($scope){
-  $scope.data = [
-    {
-      project: "ping-pong",
-      url:'ksowkpos'
-    },
-    {
-      project: "ping-pong",
-      url:'ksowkpos'
-    }
-  ]
-
-  $scope.animateBlocks= function(){
-    console.log('animation will start');
-  }
-}])
