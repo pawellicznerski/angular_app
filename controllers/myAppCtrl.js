@@ -1,3 +1,5 @@
+(function() {
+
 angular
   .module('myapp')
   .controller('myappController',['$scope']);
@@ -18,3 +20,5 @@ angular
       console.log('animation will start');
     }
   };
+
+});
